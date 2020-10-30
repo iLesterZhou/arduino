@@ -116,7 +116,7 @@ void loop() {
    delay(100);
   }
   //控制舵机
-  if(distance <= 45){//前方有障碍物
+  if(distance <= 70){//前方有障碍物
    doStop();//停车
    delay(100);
    doBackward(); 
@@ -130,11 +130,11 @@ void loop() {
      if(distanceR >= distanceL)
     {
       doRight();
-      delay(1000);
+      delay(500);
       doStop();
     }else{
       doLeft();
-      delay(1000);
+      delay(500);
       doStop();
     }                                                                                                                                     
   }else{
